@@ -1,0 +1,10 @@
+services:
+  cos284p04:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: cos284p04
+    cap_add:
+      - SYS_PTRACE
+    security_opt:
+      - seccomp:unconfined
